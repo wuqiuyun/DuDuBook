@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/wode_bg_header"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_mine_titel"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:text="我的DuDuBook"
+            android:textColor="@color/primary_color_sel"
+            android:textSize="@dimen/font_large" />
+
+        <com.wqy.dudubook.ui.CircleImageView
+            android:id="@+id/iv_photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:src="@drawable/touxiang" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:text="嘟嘟"
+            android:textColor="@color/primary_color_sel"
+            android:textSize="@dimen/font_normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin_large"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="51dp" >
+
+            <ImageView
+                android:id="@+id/ImageView07"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/mine_ico_shoucang" />
+
+            <TextView
+                android:id="@+id/TextView04"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textSize="@dimen/font_small"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@+id/ImageView07"
+                android:text="我收藏的商品" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/ImageView08"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/line_height"
+            android:src="@drawable/address_divider" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="51dp" >
+
+            <ImageView
+                android:id="@+id/ImageView05"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/mine_ico_address" />
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                 android:textSize="@dimen/font_small"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@+id/ImageView05"
+                android:text="我的地址管理" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/ImageView06"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/line_height"
+            android:src="@drawable/address_divider" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="51dp" >
+
+            <ImageView
+                android:id="@+id/ImageView03"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/mine_ico_order" />
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                 android:textSize="@dimen/font_small"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@+id/ImageView03"
+                android:text="我的订单" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/ImageView04"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/line_height"
+            android:src="@drawable/address_divider" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="51dp" >
+
+            <ImageView
+                android:id="@+id/ImageView01"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/mine_ico_settings" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@+id/ImageView01"
+                android:text="设置" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/ImageView02"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/line_height"
+            android:src="@drawable/address_divider" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="51dp" >
+
+            <ImageView
+                android:id="@+id/iv_cart_book_pic"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/mine_ico_exit" />
+
+            <TextView
+                android:id="@+id/textView1"
+                 android:textSize="@dimen/font_small"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@+id/iv_cart_book_pic"
+                android:text="退出" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/line_height"
+            android:src="@drawable/address_divider" />
+    </LinearLayout>
+
+</LinearLayout>

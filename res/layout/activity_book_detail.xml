@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textColor="@color/primary_color_sel"
+        android:textSize="@dimen/font_large"
+        android:background="@drawable/shouye_bar_top"
+        android:gravity="center"
+        android:text="详情介绍" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp" >
+        <ImageView 
+            android:id="@+id/iv_bg_pic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher"
+            />
+
+        <ImageView
+            android:id="@+id/iv_book_pic"
+            android:layout_width="106dp"
+            android:layout_height="150dp"
+            android:layout_margin="@dimen/margin_huge"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_book_name"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignTop="@+id/iv_book_pic"
+            android:layout_toEndOf="@+id/iv_book_pic"
+            android:layout_toRightOf="@+id/iv_book_pic"
+            android:gravity="center"
+            android:text="花千骨"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+         <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignTop="@+id/tv_book_name"
+            android:layout_toRightOf="@+id/tv_book_name"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:text="￥120.0"
+            android:textColor="#ff0000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_below="@id/tv_book_name"
+            android:layout_toEndOf="@+id/iv_book_pic"
+            android:layout_toRightOf="@+id/iv_book_pic"
+            android:gravity="center"
+            android:text="作者："
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_below="@+id/textView2"
+            android:gravity="center"
+            android:text="类别："
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_alignStart="@+id/textView3"
+            android:layout_below="@+id/textView3"
+            android:gravity="center"
+            android:text="出版时间："
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_alignStart="@+id/textView4"
+            android:layout_below="@+id/textView4"
+            android:gravity="center"
+            android:text="出版社："
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_author"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignTop="@+id/textView2"
+            android:layout_toRightOf="@+id/textView2"
+            android:gravity="center"
+            android:text="阿三"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_category"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignTop="@+id/textView3"
+            android:layout_toRightOf="@+id/textView3"
+            android:gravity="center"
+            android:text="阿三"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignTop="@+id/textView4"
+            android:layout_toRightOf="@+id/textView4"
+            android:gravity="center"
+            android:text="2011-11-11"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_publish"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignTop="@+id/textView5"
+            android:layout_toRightOf="@+id/textView5"
+            android:gravity="center"
+            android:text="阿三出版社"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#eeeeee"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/padding_small"
+        android:text="内容简介"
+        android:textSize="@dimen/font_normal" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="这是一个悲伤的故事。。。这是一个悲伤的故事。。。这是一个悲伤的故事。。。这是一个悲伤的故事。。。这是一个悲伤的故事。。。" />
+
+        <Button
+            android:id="@+id/btn_add_to_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@drawable/xiangqing_button"
+            android:text="添加购物车"
+            android:textColor="@color/primary_color_sel"
+            android:textSize="@dimen/font_small" 
+            android:layout_marginBottom="@dimen/margin_small"
+            />
+    </FrameLayout>
+
+</LinearLayout>
